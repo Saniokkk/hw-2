@@ -1,11 +1,16 @@
 :root {
     --title-color: #212121;
     --text-color: #757575;
+    --secondary-color: #ffffff;
     --accent-color: #2196f3;
     --header-logo: #000000;
     --footer-logo: #ffffff;
     --primary-background-color: #ffffff;
     --secondary-background-color: #2f303a;
+    --team-background-color: #f5f4fa;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --hero-hover-btn-color: #188ce8;
+    --project-btn-bg-color: #f5f4fa;
 }
 
 body {
@@ -34,7 +39,7 @@ body {
 .btn {
     cursor: pointer;
     border: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
 }
 
 .logo {
@@ -48,7 +53,7 @@ body {
 /* -----HEADER----- */
 
 .header {
-    background-color: #ffffff;
+    background-color: var(--primary-background-color);
 }
 
 .header-logo {
@@ -56,7 +61,6 @@ body {
 }
 
 .header-link {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -70,12 +74,10 @@ body {
 }
 
 .header-contacts-link {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: auto;
     color: var(--text-color);
 }
 
@@ -96,11 +98,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .hero-btn {
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
@@ -108,18 +109,17 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     background: var(--accent-color);
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #188ce8;
-    color: #ffffff;
+    background-color: var(--hero-hover-btn-color);
+    color: var(--secondary-color);
 }
 
 /* -----ADVANTAGES----- */
 .advantages-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -128,11 +128,11 @@ body {
 .advantages-text {
     font-size: 14px;
     line-height: 1.71;
+    text-transform: uppercase;
 }
 
 /* -----WORK----- */
 .work-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -140,11 +140,14 @@ body {
 
 /* -----TEAM----- */
 .team {
-    background-color: #f5f4fa;
+    background-color: var(--team-background-color);
+}
+
+.team-item{
+    background-color: var(--primary-background-color);
 }
 
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -176,14 +179,14 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .footer-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-link-color);
 }
 
 .footer-link:hover,
@@ -198,14 +201,14 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: #f5f4fa;
+    background-color: var(--project-btn-bg-color);
     color: var(--title-color);
 }
 
 .projects-btn:hover,
 .projects-btn:focus {
     background: var(--accent-color);
-    color: #ffffff;
+    color: var(--secondary-color);;
 }
 
 .projects-title {
