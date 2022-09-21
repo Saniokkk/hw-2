@@ -69,7 +69,9 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -81,10 +83,6 @@ body {
     color: var(--text-color);
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-    color: var(--accent-color);
-}
 
 /* -----HERO----- */
 .hero {
@@ -128,7 +126,6 @@ body {
 .advantages-text {
     font-size: 14px;
     line-height: 1.71;
-    text-transform: uppercase;
 }
 
 /* -----WORK----- */
